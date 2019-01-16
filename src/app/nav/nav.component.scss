@@ -9,6 +9,11 @@ header {
 
   .logo {
     color: $font-color;
+
+    img {
+      height: 18px;
+      width: 29px;
+    }
   }
 
   nav {
