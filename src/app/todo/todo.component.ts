@@ -20,7 +20,8 @@ export class TodoComponent implements OnInit {
           x["$key"] = element.key;
           this.toDoListArray.push(x);
         })
-        // Sort array isChecked false -> true
+
+        //sort array isChecked false  -> true
         this.toDoListArray.sort((a, b) => {
           return a.isChecked - b.isChecked;
         })
@@ -29,5 +30,13 @@ export class TodoComponent implements OnInit {
   onAdd(itemTitle) {
     this.toDoService.addTitle(itemTitle.value);
     itemTitle.value = null;
+  }
+
+  alterCheck($key: string, isChecked) {
+    this.toDoService.checkOrUnCheckTitle($key, !isChecked);
+  }
+
+  onDelete($key: string) {
+    this.toDoService.removeTitle($key);
   }
 }

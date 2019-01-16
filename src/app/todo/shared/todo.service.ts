@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database'
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class TodoService {
   toDoList: AngularFireList<any>;
   constructor(private firebasedb: AngularFireDatabase) { }
@@ -27,4 +25,5 @@ export class TodoService {
   removeTitle($key: string) {
     this.toDoList.remove($key);
   }
+
 }
