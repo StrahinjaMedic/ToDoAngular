@@ -1,0 +1,39 @@
+$main-color: lightgray;
+$hover-color: gray;
+$font-color: black;
+
+header {
+  background: $main-color;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  .logo {
+    color: $font-color;
+  }
+
+  nav {
+    justify-self: right;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        float: left;
+
+        a {
+          padding: 1.5em;
+          text-transform: uppercase;
+          font-size: .8em;
+          color: $font-color;
+
+          &:hover {
+            background: $hover-color;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
