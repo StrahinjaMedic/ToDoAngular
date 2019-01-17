@@ -4,13 +4,14 @@
 
 <div class="input-group">
   <input type="text" class="form-control" #itemTitle>
-  <div class="input-group-addon hover-cursor" style="border-top-right-radius: 30px;" (click)="onAdd(itemTitle)">
+  <div class="input-group-addon hover-cursor" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px;"
+    (click)="onAdd(itemTitle)">
     <i class="fa fa-plus-circle fa-2x"></i>
   </div>
 </div>
 
 <div class="todoList">
-  <ul class="list-group" style="border-radius: 30px;">
+  <ul class="list-group">
     <li class=" list-group-item" *ngFor="let item of toDoListArray">
       <span class="hover-cursor" [class.text-succes]="item.isChecked" (click)="alterCheck(item.$key, item.isChecked)">
         <i class="fa fa-lg" [ngClass]="item.isChecked?'fa-check-circle-o':'fa-circle-thin'"></i>
