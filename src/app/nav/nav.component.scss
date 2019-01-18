@@ -3,18 +3,17 @@ $hover-color: gray;
 $text-color: black;
 
 header {
-  .navbar {
-    border-radius: 30px;
-  }
-
   .navbar-inverse {
     background-color: $main-color;
     border-color: $main-color;
-    border-radius: 30px;
   }
 
   .navbar-brand {
     color: $text-color;
+  }
+
+  .nav-link {
+    border-radius: 30px;
   }
 
   .navbar-header {
@@ -72,8 +71,12 @@ header {
     .btn {
       margin-left: 23px;
       background-color: $hover-color;
-      border-color: $hover-color;
+      border-color: $main-color;
       margin-bottom: 15px;
+
+      &:hover {
+        background-color: $hover-color;
+      }
     }
 
     .login {
@@ -82,6 +85,9 @@ header {
 
     .dropdown-menu {
       width: 250px !important;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      margin-right: 10px;
     }
   }
 }
