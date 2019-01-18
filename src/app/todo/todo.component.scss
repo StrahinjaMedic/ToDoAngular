@@ -1,5 +1,6 @@
 .form-control {
   border-radius: 30px;
+  height: 45px;
 }
 
 .jumbotron {
@@ -8,4 +9,9 @@
 
 .todoList {
   margin: 5px 0px;
+}
+
+.input-group-addon {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
