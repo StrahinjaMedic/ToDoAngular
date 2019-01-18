@@ -54,16 +54,34 @@ header {
       }
     }
 
-    .dropdown-toggle {
-      background-color: $main-color;
+    .form-horizontal {
+      margin-top: 10px;
+    }
+
+    .form-title {
+      font-size: 30px;
+      margin-left: 23px;
+    }
+
+    .form-control {
+      width: 200px;
+      margin-left: 23px;
+      border-radius: 30px;
+    }
+
+    .btn {
+      margin-left: 23px;
+      background-color: $hover-color;
+      border-color: $hover-color;
+      margin-bottom: 15px;
     }
 
     .login {
-      margin-bottom: 5px;
+      margin-bottom: 15px;
     }
 
     .dropdown-menu {
-      width: 300px !important;
+      width: 250px !important;
     }
   }
 }
