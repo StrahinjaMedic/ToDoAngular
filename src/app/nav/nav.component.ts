@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  appTitle: string = 'My Todo App';
+  appTitle: string = 'This Is Me';
 
   constructor() { }
 
