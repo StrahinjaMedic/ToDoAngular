@@ -8,6 +8,10 @@ header {
     border-color: $main-color;
   }
 
+  .container-fluid {
+    display: flex;
+  }
+
   .navbar-brand {
     color: $text-color;
   }
@@ -81,13 +85,6 @@ header {
 
     .login {
       margin-bottom: 15px;
-    }
-
-    .dropdown-menu {
-      width: 250px !important;
-      border-bottom-left-radius: 30px;
-      border-bottom-right-radius: 30px;
-      margin-right: 10px;
     }
   }
 }
