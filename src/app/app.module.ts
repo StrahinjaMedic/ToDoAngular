@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { TodoComponent } from './todo/todo.component';
 import { environment } from '../environments/environment';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { environment } from '../environments/environment';
     NavComponent,
     HomeComponent,
     TodoComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,

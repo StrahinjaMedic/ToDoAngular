@@ -1,0 +1,19 @@
+.banner {
+  width: 100%;
+  height: -webkit-fill-available;
+  background-image: url("../../assets/fotos/banner1.jpg");
+  border: solid;
+  border-bottom: 0;
+
+  .welkom {
+    font-size: 100px;
+    margin-top: 0;
+    padding-top: 260px;
+    padding-left: 420px;
+  }
+
+  .scroll {
+    font-size: 35px;
+    padding-left: 300px;
+  }
+}

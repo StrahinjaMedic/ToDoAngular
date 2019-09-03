@@ -4,6 +4,7 @@ $text-color: black;
 
 .jumbotron {
   padding: 7px 0px;
+  border: solid;
 }
 
 .text-container {
@@ -27,6 +28,7 @@ $text-color: black;
       background-color: $main-color;
       padding: 20px;
       border-radius: 50px;
+      border: solid;
       word-wrap: break-word;
     }
   }

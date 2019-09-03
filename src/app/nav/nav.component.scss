@@ -3,6 +3,9 @@ $hover-color: gray;
 $text-color: black;
 
 header {
+  border: solid;
+  height: 71px;
+
   .navbar-inverse {
     background-color: $main-color;
     border-color: $main-color;
